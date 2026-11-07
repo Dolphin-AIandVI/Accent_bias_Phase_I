@@ -1,0 +1,34 @@
+{
+    "team_name": "Dolphin",
+    "students": [
+        {
+            "student_id": "k52207605",
+            "first_name": "Ebba Wakgari",
+            "last_name": "Tilahun",
+            "email": "ewakgarit@gmail.com",
+            "github_user": "Ebba-eng"
+        },
+{
+            "student_id": "k12341139",
+            "first_name": "Justice Ezirim",
+            "last_name": "Ndubuisi",
+            "email": "ndubuisi_justice@hotmail.com",
+            "github_user": "ndubuisi-justice"
+        },
+{
+            "student_id": "k12557094",
+            "first_name": "Sheikh",
+            "last_name": "Farzah",
+            "email": "first.last@mail.com",
+            "github_user": "mygitusername"
+        },
+{
+            "student_id": "k12440895",
+            "first_name": "Maria",
+            "last_name": "Roychan",
+            "email": "first.last@mail.com",
+            "github_user": "mygitusername"
+        },
+        // ...add a record for each student
+    ]
+}

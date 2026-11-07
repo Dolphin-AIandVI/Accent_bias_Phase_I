@@ -1,0 +1,27 @@
+{
+    "team_name": "Dolphin",
+    "students": [
+        {
+            "first_name": "Ebba Wakgari",
+            "last_name": "Tilahun",
+            "workload": 0.25
+        },
+{
+            "first_name": "Justice Ezirim",
+            "last_name": "Ndubuisi",
+            "workload": 0.25
+        },
+  {
+            "first_name": "Sheikh",
+            "last_name": "Farzah",
+            "workload": 0.25
+        },
+  {
+            "first_name": "Maria",
+            "last_name": "Roychan",
+            "workload": 0.25
+        },
+  
+      
+    ]
+} 
