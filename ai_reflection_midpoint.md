@@ -1,25 +1,42 @@
-Introduction
+# AI Reflection – Midpoint Report
 
-Our project investigates whether wav2vec 2.0 (Meta) and Whisper (OpenAI) behave differently across English accents, using the EdAcc dataset. In Phase I we treated both models as black boxes. We wanted to build a reproducible pipeline that scores both models on the same clips, then find systematic differences in errors and confidence across accents, beyond a single WER number. As the AI-aided pair, we used Claude AI to speed up pipeline design and code, and to broaden the analysis.”
+## AI-Aided Pair
 
-Why these two models, and why these accents
-1. Same task, very different training data
+| First Name             | Last Name             | Student ID     |
+| ---------------------- | --------------------- | -------------- |
+|  Sheikh                | Farzah                | K1 |
+| Justice Ezirim         | Ndubuisi              | K12341139 |
 
-wav2vec2-base-960h is pretrained on unlabeled audio and fine-tuned on LibriSpeech (960 hours of read audiobooks). That data is fairly narrow, mostly North American, and has little accent variety.
-Whisper was trained on a very large, diverse set of web audio (roughly 680k hours, weakly supervised). This is the opposite of the narrow-data case.
-That gives you a testable hypothesis: does narrow training data show up as accent bias, and does diverse data reduce it?. LibriSpeech is open, so you can inspect it. Whisper’s data is not public.
+## 1. Introduction
 
-2. Different architectures, different kinds of confidence
+During Phase I of our project, we used Generative AI as a supporting tool to assist us throughout different stages of the project. Our main objective was to use AI to support our understanding of the task, explore potential solutions, and address technical challenges.
 
-wav2vec2 is a CTC model that emits a label per audio frame, with no decoder.
-Whisper is an encoder–decoder that generates tokens autoregressively, so it can also drop or invent words.
-This is why we used8 two different log-probability definitions. It also means the two models should fail in different ways, such as garbled characters from wav2vec2 versus deletions or hallucinations from Whisper.
+## 2. Use of Generative AI
 
-3. Phase II would need open weights
-Both are open and available on Hugging Face. we intend to extract encoder embeddings for UMAP or t-SNE (Lecture 3) and, for Whisper, look at attention maps. SHAP or LIME on derived features (Lecture 4) works for either. A closed API model would not allow that.
+We primarily used Claude AI for different purposes, including understanding project requirements, exploring possible approaches, understanding technical concepts, and assisting with programming tasks.
 
-4. Practical reasons
-Wav2vec2 and Whisper are widely used, they run in Colab with pinned checkpoints for reproducibility, and the small variants are feasible on limited compute (about 4 hours on CPU). Accent disparities in speech recognition are also a well-known topic.
+We also used Generative AI to clarify unfamiliar concepts, investigate errors, and discuss alternative solutions during the development process.
 
+## 3. Strengths of Generative AI
 
+Generative AI was particularly useful for explaining technical concepts and providing accessible explanations when we encountered difficulties. It helped us explore different approaches and identify possible solutions to programming problems.
 
+Another advantage was the ability to interactively ask follow-up questions, allowing us to obtain additional explanations and refine our understanding.
+
+## 4. Limitations of Generative AI
+
+Despite its usefulness, Generative AI had several limitations. Some responses were inaccurate or too general, while some generated code required corrections before it could be used.
+
+Furthermore, certain suggestions were not entirely suitable for our specific project requirements. This demonstrated that AI-generated responses should not automatically be considered correct or reliable.
+
+## 5. Critical Evaluation
+
+To address these limitations, we evaluated AI-generated suggestions before applying them to our project. We tested generated code, compared technical explanations with relevant documentation, and considered whether proposed solutions were appropriate for our objectives.
+
+We also discussed the suggestions as a team and made our own decisions regarding their implementation.
+
+## 6. Conclusion and Lessons Learned
+
+Our experience with Generative AI during Phase I demonstrated that it can be a valuable supporting tool for technical projects. It helped us understand concepts, explore possible solutions, fix bugs in the human part and addressed development challenges.
+
+However, we also learned the importance of critically evaluating AI-generated information rather than relying on it without verification.
