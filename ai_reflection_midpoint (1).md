@@ -83,9 +83,9 @@ AI assistance increased **breadth**: 8 accents instead of 4, and about ten analy
 ## 8. Did AI assistance save time or add verification work?
 
 - **Time saved.** The AI-aided notebook is larger and includes resumable checkpointing, a one-clip smoke test before the full run, a check that stops the run if Whisper scores are missing, speaker-aware sampling, and a wide set of analyses. The human-only run of 500 clips took about 29 minutes on CPU.
-- 
+
 - **Verification work.** The AI-aided notebook shows warnings from the transformers library about generation arguments, a Colab widget-manager step needed for the interactive plots (re-run out of order), and Colab-specific cells.
-- 
+
 - **Net effect.** AI saved time on code and widened the investigation, but moved effort from writing to checking. The checks that mattered most for the results (normalization rules, sample design, speaker variation, written interpretation) had to come from us.
 
 ## 9. Failure patterns observed in AI-assisted work
