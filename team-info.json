@@ -19,16 +19,16 @@
             "student_id": "k12557094",
             "first_name": "Sheikh",
             "last_name": "Farzah",
-            "email": "first.last@mail.com",
-            "github_user": "mygitusername"
+            "email": "sheikhfarzah2@gmail.com",
+            "github_user": "Sheikh-Farzah"
         },
 {
             "student_id": "k12440895",
             "first_name": "Maria",
             "last_name": "Roychan",
             "email": "first.last@mail.com",
-            "github_user": "mygitusername"
+            "github_user": "itz-me-maria"
         },
-        // ...add a record for each student
+
     ]
 }
