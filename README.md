@@ -151,11 +151,11 @@ Runtime: about 4 hours on CPU for 1,422 clips (a GPU runtime is recommended).
 .
 ├── README.md
 ├── ai_interaction.md/
-│   └── Accent_trial_1.ipynb        # sampling + two-model scoring
-    human_pair.ipynb
+│   └── AI_aided_accent_bias.ipynb       
+│   └── Human_only_accent_bias.ipynb
 ├── data/
 │   └── edacc_two_model_predictions.csv
-├── analysis/                       # [Phase I analysis notebooks]
+├── analysis/                       
 └── ai_use_log.md                   # [AI-aided pair: prompts, decisions, failures]
 ```
 
