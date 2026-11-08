@@ -77,9 +77,7 @@ AI assistance increased **breadth**: 8 accents instead of 4, and about ten analy
 ## 7. Confidence and the evidence behind it
 
 - **Human-only pair: low confidence.** The pair felt that they worked with less data and that their analysis was limited to calculating error rates, so they are not confident in their work. This matches the evidence: 500 consecutive clips, four accent groups, error rates and error-type counts as the only measures, and no speaker information to check the group results against.
-
 - **AI-aided pair: high confidence.** The pair felt very confident. they believed their visualizations showed the data more deeply and explained more patterns. This rests on a larger sample (8 accents, 1,422 clips) and on views beyond error rates: speaker-level WER, paired clip-level comparison, error composition, hallucination candidates, confidence against error, and acoustic-feature projections.
-
 - **What the evidence supports.** The AI-aided pair's confidence is better supported by breadth and variety of evidence. their accent-level conclusions are still limited by groups of 1 to 3 speakers and by the absence of confidence intervals, so descriptive statements about our samples are justified more than general claims about accents.
 
 ## 8. Did AI assistance save time or add verification work?
