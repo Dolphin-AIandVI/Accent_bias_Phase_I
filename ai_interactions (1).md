@@ -1,9 +1,9 @@
 # AI Interactions Record: AI-aided pair, Phase I
 
-**AI-aided pair:** [First Last, Student ID] · [First Last, Student ID]
+**AI-aided pair:** [Sheikh Farzah, K12557094] · [Justice Ezirim Ndubuisi, K12341139]
 **Project:** Accent bias in wav2vec 2.0 and Whisper on the EdAcc dataset
 
-This file records the GenAI interactions that influenced the AI-aided pair's Phase I analysis, and what they show about the strengths and limits of GenAI assistance. It combines the records of both pair members: one member's saved ChatGPT conversation (research planning) and the other member's prompts, reply summaries and verification notes for Claude (pipeline and analysis). It is checked against the AI-aided notebook and the Phase I visual report.
+This file records the GenAI interactions that influenced the AI-aided pair's Phase I analysis, and what they show about the strengths and limits of GenAI assistance. It combines the records of both pair members: one member's saved ChatGPT conversation (research planning) and the other member's prompts, reply summaries and verification notes for Claude (pipeline and analysis).
 
 ---
 
@@ -19,9 +19,8 @@ In Phase I we treated wav2vec 2.0 and Whisper as black boxes. We wanted a reprod
 
 ## 2. Research planning with ChatGPT
 
-- **Tool and model:** ChatGPT [FILL IN: model]
-- **Used by:** [FILL IN: member name]
-- **Date:** [FILL IN]
+- **Tool and model:** ChatGPT
+- **Used by:** [Sheikh Farzah]
 
 ### Prompts
 
@@ -39,27 +38,25 @@ A Master's-level plan titled *AccentFair*, with three models (Whisper, wav2vec 2
 
 ### How the plan influenced the analysis
 
-| Suggestion in the plan | Outcome in the AI-aided notebook |
-|---|---|
-| EdAcc as the main dataset | Adopted (test split) |
-| `facebook/wav2vec2-base-960h` | Adopted unchanged |
-| `openai/whisper-small.en` | Modified: `openai/whisper-small` (multilingual, English forced) |
-| Report corpus-level WER, not an average of per-clip WER | Adopted (corpus WER) |
-| Substitution, deletion and insertion analysis | Adopted |
-| Speaker-level WER distribution | Adopted (speaker-level strip plot) |
-| Speaker-level confidence intervals, statistical tests | Not used |
-| Model-by-accent heatmap | Not made; point and dumbbell views used instead |
-| Interactive dashboard | Partly adopted (plotly dropdown filters) |
-| Conformer model, CER, semantic similarity | Not used in Phase I |
-| Minimum of 15 speakers and 100 utterances per accent group | Not applied; groups have 1 to 9 speakers |
-| Common Voice and accent-balanced fine-tuning | Not part of Phase I, which analyses model behaviour as a black box |
-
-[FILL IN: the team's own reasons for each choice, where they differ from the scope note in the last row.]
+| Suggestion in the plan                                     | Outcome in the AI-aided notebook                                   |
+|------------------------------------------------------------|--------------------------------------------------------------------|
+| EdAcc as the main dataset                                  | Adopted (test split)                                               |
+| `facebook/wav2vec2-base-960h`                              | Adopted unchanged                                                  |
+| `openai/whisper-small.en`                                  | Modified: `openai/whisper-small` (multilingual, English forced)    |
+| Report corpus-level WER, not an average of per-clip WER    | Adopted (corpus WER)                                               |
+| Substitution, deletion and insertion analysis              | Adopted                                                            |
+| Speaker-level WER distribution                             | Adopted (speaker-level strip plot)                                 |
+| Speaker-level confidence intervals, statistical tests      | Not used                                                           |
+| Model-by-accent heatmap                                    | Not made; point and dumbbell views used instead                    |
+| Interactive dashboard                                      | Partly adopted (plotly dropdown filters)                           |
+| Conformer model, CER, semantic similarity                  | Not used in Phase I                                                |
+| Minimum of 15 speakers and 100 utterances per accent group | Not applied; groups have 1 to 9 speakers                           |
+| Common Voice and accent-balanced fine-tuning               | Not part of Phase I, which analyses model behaviour as a black box |
 
 ## 3. Pipeline and analysis with Claude
 
-- **Tool and model:** Claude [FILL IN: model]
-- **Used by:** [FILL IN: member name]
+- **Tool and model:** Claude Sonnet 5.5
+- **Used by:** [Justice Ezirim Ndubuisi, K12341139]
 
 The prompts below are reproduced as recorded by the member, with pasted material (assignment text, warnings, outputs) left out. The "reply" lines are the member's summaries, not the full replies.
 
@@ -107,8 +104,6 @@ The prompts below are reproduced as recorded by the member, with pasted material
 
 **Verification:** Re-run on a few clips to confirm the output is unchanged after the fix.
 
-**Effect on the analysis:** [FILL IN: which option was chosen. The saved notebook output shows a CPU run.]
-
 ### 3.5 Interpreting results
 
 **Prompt:** "Reference: [text]. Whisper output: [text], confidence X. wav2vec2 output: [text], confidence Y. What does this suggest, and what should we test next?"
@@ -121,18 +116,16 @@ The prompts below are reproduced as recorded by the member, with pasted material
 
 ## 4. Other GenAI use in the project (Claude, separate conversation)
 
-Team-level use of Claude for planning and writing. [FILL IN: which members used it, and which of these influenced the AI-aided notebook.]
+Team-level use of Claude for planning and writing.
 
-| Request | What Claude provided |
-|---|---|
-| Assignment text, the course example and the accent-bias idea; how to do the project | Explanation of the Phase I and Phase II tasks, the midpoint deliverables and a timeline |
-| Discussion material for the group | Decision points and three possible routes |
-| The EdAcc dataset link | A summary of the dataset page (splits, columns) and points to check: conversational speech, few speakers, annotation tags, clip lengths |
-| Confusion about the two pairs | A clarification that "AI-aided" means using GenAI, not the speech models |
-| A sample plan for both pairs, then a working solution | A sample plan, a script-based pipeline tested on synthetic data, and a single-notebook version tested only on synthetic data (not handed over) |
-| Both notebooks and the visual report | Drafts of the reflection and README, revised at the team's direction |
-
-The Phase I visual report (`Vis4AI_Phase_I_Visual_Report.html`): [FILL IN: how GenAI was used].
+| Request                                                                             | What Claude provided                                                     |
+|-------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
+| Assignment text, the course example and the accent-bias idea; how to do the project | Explanation of the Phase I and Phase II tasks, the midpoint deliverables                                                                                           and a timeline |
+| Discussion material for the group                                                   | Decision points and three possible routes |
+| The EdAcc dataset link                                                              | A summary of the dataset page (splits, columns) and points to check:                                                                                              conversational speech, few speakers, annotation tags, clip lengths |
+| Confusion about the two pairs                                                       | A clarification that "AI-aided" means using GenAI, not the speech models |
+| A sample plan for both pairs, then a working solution                               | A sample plan, a script-based pipeline tested on synthetic data, and a                                                                                             single-notebook version tested only on synthetic data (not handed over) |
+| Both notebooks and the visual report                                                | Drafts of the reflection and README, revised at the team's direction |
 
 ## 5. Strengths and limitations observed
 
