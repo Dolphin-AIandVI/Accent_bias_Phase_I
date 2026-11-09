@@ -67,10 +67,10 @@ attention) possible.
 
 ### Confidence scores (output-level only)
 
-| Model                   | Definition |
-
-| Whisper                 | Mean log-probability of generated tokens (special tokens excluded). |
-| wav2vec2                 | Approximate: mean log-probability of tokens on the greedy CTC path (repeats collapsed, blanks                               dropped). |
+| Model    | Definition                                                                                              |
+|----------|---------------------------------------------------------------------------------------------------------|
+| Whisper  | Mean log-probability of generated tokens (special tokens excluded).                                     |
+| wav2vec2 | Approximate: mean log-probability of tokens on the greedy CTC path (repeats collapsed, blanks dropped). |
 
 The two scores are computed over different units and are **not directly comparable
 across models**. Compare within a model across accents.
