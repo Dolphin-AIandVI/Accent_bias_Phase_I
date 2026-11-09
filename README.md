@@ -10,7 +10,7 @@ on different **English accents**, and, if so, how and why.
 The assignment has two phases:
 
 | Phase       | Question                               | Constraint                                                      |
-
+|-------------|----------------------------------------|-----------------------------------------------------------------|
 | **I**       | How does the model behave?             | **Black-box only.** Use inputs and outputs, no model internals. |
 | **II**      | What did the model learn?              | Open the box (representations, attention, gradients). Use at                                                                                                       least two explanation techniques and compare them.             |
 
