@@ -40,13 +40,13 @@ and explain them in depth, for example:
 
 Both models are open-weight and loaded from Hugging Face, with pinned checkpoints for reproducibility.
 
-|                   | wav2vec 2.0                       | Whisper |
-
-| **Checkpoint**    | `facebook/wav2vec2-base-960h`     | `openai/whisper-small` |
-| **Developer**     | Meta                              | OpenAI |
-| **Architecture**  | Encoder with CTC head (frame-level predictions, no decoder) | Encoder–decoder transformer (autoregressive token generation) |
-| **Training data** | Self-supervised pretraining, fine-tuned on LibriSpeech 960 h (read audiobooks) | Large, diverse, weakly supervised web audio |
-| **Class in code** | `AutoModelForCTC` + `AutoProcessor` | `WhisperForConditionalGeneration` + `WhisperProcessor` |
+|                   | wav2vec 2.0                                                                    | Whisper                                                   |
+|-------------------|--------------------------------------------------------------------------------|-----------------------------------------------------------|
+| **Checkpoint**    | `facebook/wav2vec2-base-960h`                                                  | `openai/whisper-small`                                    |
+| **Developer**     | Meta                                                                           | OpenAI                                                    |
+| **Architecture**  | Encoder with CTC head (frame-level predictions, no decoder)                    | Encoder–decoder transformer (autoregressive token                                                                                                                 generation) |
+| **Training data** | Self-supervised pretraining, fine-tuned on LibriSpeech 960 h (read audiobooks) | Large, diverse, weakly supervised web audio               |
+| **Class in code** | `AutoModelForCTC` + `AutoProcessor`                                            | `WhisperForConditionalGeneration` + `WhisperProcessor`    |
 
 **Why this pair:** same task, very different training data and architecture.
 That makes it possible to ask whether narrow training data shows up as accent bias, and
