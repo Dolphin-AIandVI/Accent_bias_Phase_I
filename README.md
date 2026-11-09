@@ -9,10 +9,10 @@ on different **English accents**, and, if so, how and why.
 
 The assignment has two phases:
 
-| Phase       | Question                               | Constraint |
+| Phase       | Question                               | Constraint                                                      |
 
 | **I**       | How does the model behave?             | **Black-box only.** Use inputs and outputs, no model internals. |
-| **II**      | What did the model learn?              | Open the box (representations, attention, gradients). Use at                                                               least two explanation techniques and compare them. |
+| **II**      | What did the model learn?              | Open the box (representations, attention, gradients). Use at                                                                                                       least two explanation techniques and compare them.             |
 
 **AI4Vis track.** The group is split into two pairs working on the same model and task:
 an *AI-aided* pair and a *human-only* pair. The pairs switch roles at the end of Phase I,
